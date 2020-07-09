@@ -1,24 +1,141 @@
+html, body {
+    box-sizing: border-box;
+    font-family: arial, sans-serif;
+    color :#5f6368;
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    padding-left: 2em;
+}
+
 .main {
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    font-family: arial, sans-serif;
+    justify-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
-img {
+.nav-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 3em;
+    width: 100%;
+}
+
+#Google-logo {
     object-fit: contain;
-    
+    height: 92px;
+    width: 272px;
+    padding: 2em;
+ }
+
+ footer {
+     display: flex;
+     flex-direction: column;
+     position: fixed;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     background-color: #eee;
+     font-size: 0.8em;
+     margin: 0;
+     padding: 0;
+ }
+
+ footer>p {
+     padding-left: 0;
+     align-self: flex-start;
+ }
+
+ .top-left-nav, .top-right-nav{
+    display: flex;
+    font-size: 0.8em;
 }
 
-#mic-icon {
-    width: 3em;
-    height: 3em;
+.centre-block {
+    height: 10em;
+    width: 100%;
+ }
+
+.input-search-group {
+    display: inline-block;
+    position: relative; 
+    width: 40em;
+    margin: 0;
 }
-#search {
-    width: 50em;
-    height: 3em;
+
+.input-search-icon {
+    position: absolute;
+    padding: 1em;
+    color: #c2c2c2;
+}
+
+.microphone-icon {
+    position: absolute;
+    width: 1.8em;
+    height: 1.8em;
+    padding: 0;
+}
+
+.input-search-field {
+    width: 100%;
+    height: 1.9em;
+    padding: 1em;
     border: 0.06em solid lightgray;
     border-radius: 20em;
-    object-fit: contain;
+}
+
+.buttons {
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 0.3em;
+    padding: 0.7em 1em;
+    margin: 1em;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.buttons:hover {
+    border-width: 0.05em;
+    border-style: solid;
+    border-color: lightgray;    
+}
+
+.footer-content-top {
+    display: flex;
+    border: 0.1em solid darkgray;
+    padding: 1em 0;
+    margin: 0;
+}
+
+.footer-content-left {
+    display: flex;
+}
+
+.footer-content-right {
+    display: flex;
+    padding-right: 1em;
+}
+
+.footer-content-bottom {
+    display: flex;
+    justify-content: space-between;
+    border: 0.1em solid darkgray;
+}
+   
+#apps-icon {
+    height: 1.5em;
+    width: 1.5em;
+    padding-top: 0;
 }

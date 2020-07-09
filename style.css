@@ -131,7 +131,8 @@ li {
 .footer-content-bottom {
     display: flex;
     justify-content: space-between;
-    border: 0.1em solid darkgray;
+    border: 0.08em solid darkgray;
+    border-top: none;
 }
    
 #apps-icon {
